@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="mt-[32px] px-4 sm:px-6 lg:px-8">
       <div
-        className="relative max-w-[1340px] mx-auto h-[761px] rounded-[32px] overflow-hidden 
+        className="relative max-w-7xl mx-auto h-[761px] rounded-[32px] overflow-hidden 
                    bg-cover bg-center bg-[url('/headerimg.png')]
                    flex flex-col justify-center items-center
                    text-center

@@ -10,10 +10,10 @@ export default function ProductsBox() {
             <p className="text-[18px] font-normal leading-tight tracking-[-0.04em] text-[#27272799]">
               Наши товары
             </p>
+          </div>
             <h2 className="mt-2 text-[28px] sm:text-[32px] font-normal leading-[1.3] tracking-[-0.04em] text-[#272727]">
               Новые поступления
             </h2>
-          </div>
           <button className="flex items-center justify-center gap-2 w-full sm:w-auto min-w-[180px] h-[42px] rounded-[12px] bg-[#DDDDDD] hover:bg-[#D0D0D0] transition">
             <span className="text-[16px] font-medium">Посмотреть все</span>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

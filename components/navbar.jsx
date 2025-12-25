@@ -8,14 +8,12 @@ export default function Navbar() {
   const [search, setSearch] = useState("");
 
   return (
-    <nav className="px-[50px] mt-[43px] hidden lg:block">
-      <div className="flex justify-between items-center h-16">
-        {/* Logo */}
+    <div className='max-w-7xl m-auto'>
+    <div className=" mt-[43px] hidden lg:block ">
+      <div className="flex justify-between items-center h-16 ">
         <div className="flex-shrink-0">
           <Image src="/icon/nabarlogo.svg" width={83} height={59} alt="Genius Electro" />
         </div>
-
-        {/* Menu Links */}
         <div className="flex items-center gap-[24px]">
           <a href="#" className="text-black font-medium">Главная</a>
           <a href="#" className="text-[#27272799]">О нас</a>
@@ -24,10 +22,7 @@ export default function Navbar() {
           <a href="#" className="text-[#27272799]">Доставка и оплата</a>
           <a href="#" className="text-[#27272799]">Контакты</a>
         </div>
-
-        {/* Right Side: Search + Icons + Login */}
         <div className="flex items-center gap-4">
-          {/* Search Input */}
           <div className="relative">
             <input
               type="text"
@@ -46,8 +41,6 @@ export default function Navbar() {
               <MagnifyingGlassIcon className="w-5 h-5 text-white" />
             </div>
           </div>
-
-          {/* Icons */}
           <div className="w-[47px] h-[47px] bg-gradient-to-br from-[#D8C19A] to-[#C3974C] rounded-[12px] flex items-center justify-center cursor-pointer">
             <Image src="/icon/navbaricon1.svg" width={18} height={18} alt="Favorites" />
           </div>
@@ -55,12 +48,12 @@ export default function Navbar() {
             <Image src="/icon/navbaricon2.svg" width={18} height={18} alt="Cart" />
           </div>
 
-          {/* Login Button */}
-          <button className="w-[129px] h-[47px] bg-gradient-to-br from-[#D8C19A] to-[#C3974C] rounded-[12px] text-white font-normal text-[14px] hover:opacity-90 transition">
+          <button className="w-[129px] text-[#272727] h-[47px] bg-gradient-to-br from-[#D8C19A] to-[#C3974C] rounded-[12px]   font-normal text-[14px] hover:opacity-90 transition">
             Вход
           </button>
         </div>
       </div>
-    </nav>
+    </div>
+    </div>
   );
 }
