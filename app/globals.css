@@ -3,3 +3,15 @@
 body{
     font-family: "Inter", sans-serif;
 }
+
+/* globals.css yoki component CSS */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.AboutHeader{
+  background: url('/abouthero.png') center/cover no-repeat;
+}

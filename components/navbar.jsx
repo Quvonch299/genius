@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [search, setSearch] = useState("");
@@ -16,8 +17,8 @@ export default function Navbar() {
         </div>
         <div className="flex items-center gap-[24px]">
           <a href="#" className="text-black font-medium">Главная</a>
-          <a href="#" className="text-[#27272799]">О нас</a>
-          <a href="#" className="text-[#27272799]">Каталог</a>
+          <Link href={'/about'}  className="text-[#27272799]">О нас</Link>
+          <Link href={'/catalog'} className="text-[#27272799]">Каталог</Link>
           <a href="#" className="text-[#27272799]">Отзывы</a>
           <a href="#" className="text-[#27272799]">Доставка и оплата</a>
           <a href="#" className="text-[#27272799]">Контакты</a>
