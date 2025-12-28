@@ -14,7 +14,8 @@ export default function Product({
     size,
     price,
     initialQuantity = 1,
-    buttonText = "В корзину"
+    buttonText = "В корзину",
+    onClick
 }) {
     const [quantity, setQuantity] = useState(initialQuantity)
     const [isLiked, setIsLiked] = useState(isLike || false)
