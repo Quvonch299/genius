@@ -7,10 +7,10 @@ import React from 'react'
 export default function page() {
   return (
     <div>
-        {/* <ReviewHero/>
+        <ReviewHero/>
         <RecentReviews/>
-        <ContactConsultation/> */}
-        <IEK/>
+        <ContactConsultation/>
+        {/* <IEK/> */}
     </div>
   )
 }
