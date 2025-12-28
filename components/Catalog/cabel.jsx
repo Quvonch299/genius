@@ -21,9 +21,23 @@ export default function Cabel() {
           </button>
         </div>
       </div>
-      <div className='w-[317px] pt-[43px] h-[306px] shadow-[0_0_4px_0_rgba(118,118,118,0.15)] rounded-[16px]'>
+      <div className='grid grid-cols-4 gap-[24px]'>
+      <div className='p-[32px] w-[317px] pt-[43px] h-[306px] shadow-[0_0_4px_0_rgba(118,118,118,0.15)] rounded-[16px]'>
 <Image className=' mb-[31px]' src={'/sec11.png'} width={300} height={183} alt='qa'/>
-<h2 className='ml-[32px] font-normal text-[24px] leading-[100%] tracking-[-0.04em]'>Кабель и провод</h2>
+<h2 className=' font-normal text-[24px] leading-[100%] tracking-[-0.04em]'>Кабель и провод</h2>
+      </div>
+      <div className='p-[32px] w-[317px] pt-[43px] h-[306px] shadow-[0_0_4px_0_rgba(118,118,118,0.15)] rounded-[16px]'>
+<Image className=' mb-[31px]' src={'/sec11.png'} width={300} height={183} alt='qa'/>
+<h2 className=' font-normal text-[24px] leading-[100%] tracking-[-0.04em]'>Кабель и провод</h2>
+      </div>
+      <div className='p-[32px] w-[317px] pt-[43px] h-[306px] shadow-[0_0_4px_0_rgba(118,118,118,0.15)] rounded-[16px]'>
+<Image className=' mb-[31px]' src={'/sec11.png'} width={300} height={183} alt='qa'/>
+<h2 className=' font-normal text-[24px] leading-[100%] tracking-[-0.04em]'>Кабель и провод</h2>
+      </div>
+      <div className='p-[32px] w-[317px] pt-[43px] h-[306px] shadow-[0_0_4px_0_rgba(118,118,118,0.15)] rounded-[16px]'>
+<Image className=' mb-[31px]' src={'/sec11.png'} width={300} height={183} alt='qa'/>
+<h2 className=' font-normal text-[24px] leading-[100%] tracking-[-0.04em]'>Кабель и провод</h2>
+      </div>
       </div>
     </div>
   )

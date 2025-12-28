@@ -1,19 +1,16 @@
-import React from 'react';
-import Product from '../ui/Product';
+import React from 'react'
 
-export default function ProductsBox({display}) {
+export default function NewProduct() {
   return (
-    <section className="mt-[100px] px-4 sm:px-6 lg:px-8">
-      <div className={`max-w-7xl ${display} mx-auto`}>
+    <div className=' max-w-7xl mx-auto'>
+         <div className=" mt-[100px]">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6 mb-12">
           <div className="text-center sm:text-left">
-            <p className="text-[18px] font-normal leading-tight tracking-[-0.04em] text-[#27272799]">
-              Наши товары
+            <p className="font-normal text-[32px] leading-[42px] tracking-[-0.04em]  ">
+          Новые поступления
             </p>
           </div>
-            <h2 className="mt-2 text-[28px] sm:text-[32px] font-normal leading-[1.3] tracking-[-0.04em] text-[#272727]">
-              Новые поступления
-            </h2>
+           
           <button className="flex items-center justify-center gap-2 w-full sm:w-auto min-w-[180px] h-[42px] rounded-[12px] bg-[#DDDDDD] hover:bg-[#D0D0D0] transition">
             <span className="text-[16px] font-medium">Посмотреть все</span>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,14 +20,6 @@ export default function ProductsBox({display}) {
           </button>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-        </div>
-      </div>
-    </section>
-  );
+    </div>
+  )
 }

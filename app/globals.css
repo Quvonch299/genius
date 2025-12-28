@@ -15,3 +15,6 @@ body{
 .AboutHeader{
   background: url('/abouthero.png') center/cover no-repeat;
 }
+.Catalohhero{
+  background: url('/cataloghero.png') center/cover no-repeat;
+}

@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import MobileNavbar from "@/components/mobilni-nav";
+import PageTransition from "@/components/PageTransition";
 
 
 
@@ -19,7 +20,9 @@ export default function RootLayout({ children }) {
       >
         <Navbar/>
         <MobileNavbar/>
-        {children}
+        <PageTransition>
+          {children}
+        </PageTransition>
         <Footer/>
       </body>
     </html>
