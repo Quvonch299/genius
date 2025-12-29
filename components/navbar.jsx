@@ -101,9 +101,12 @@ export default function Navbar() {
             <div className="w-[47px] h-[47px] bg-gradient-to-br from-[#D8C19A] to-[#C3974C] rounded-[12px] flex items-center justify-center cursor-pointer">
               <Image src="/icon/navbaricon2.svg" width={18} height={18} alt="Cart" />
             </div>
+            <Link href={'/auth/login'}>
+
             <button className="w-[129px] text-[#272727] h-[47px] bg-gradient-to-br from-[#D8C19A] to-[#C3974C] rounded-[12px] font-normal text-[14px] hover:opacity-90 transition">
               Вход
             </button>
+            </Link>
           </div>
         </div>
       </div>
