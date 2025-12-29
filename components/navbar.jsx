@@ -26,15 +26,15 @@ export default function Navbar() {
               О нас
             </Link>
             <div className="relative">
-      <button
-        onClick={() => setCatalogOpen(!catalogOpen)}
+      <Link href={'/catalog'}
         className="flex items-center gap-1 text-[#27272799] hover:text-black transition-colors duration-200 focus:outline-none"
       >
         Каталог
         <ChevronDownIcon
+        onClick={() => setCatalogOpen(!catalogOpen)}
           className={`w-4 h-4 transition-transform duration-200 ${catalogOpen ? "rotate-180" : ""}`}
         />
-      </button>
+      </Link>
 
       <AnimatePresence>
         {catalogOpen && (
@@ -44,6 +44,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
             className="absolute top-full left-0 mt-3 w-64 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-50"
+            
           >
             <div className="py-4 px-2">
               <Link
@@ -67,12 +68,12 @@ export default function Navbar() {
             <Link href={'/reviews'} className="text-[#27272799]">
               Отзывы
             </Link>
-            <a href="#" className="text-[#27272799]">
+            <Link href={'/dastavca'} className="text-[#27272799]">
               Доставка и оплата
-            </a>
-            <a href="#" className="text-[#27272799]">
+            </Link>
+            <Link href={'/cantact'} className="text-[#27272799]">
               Контакты
-            </a>
+            </Link>
           </div>
           <div className="flex items-center gap-4">
             <div className="relative">

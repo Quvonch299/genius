@@ -1,4 +1,4 @@
-import Dashboard from '@/components/catalog-details/dashboard'
+import Dashboard from '@/components/Catalog-details/dashboard'
 import React from 'react'
 
 export default function CatalogDetail() {
