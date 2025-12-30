@@ -1,4 +1,4 @@
-import DashboardCatalog from "@/components/Catalog-details/dashboard";
+import DashboardCatalog from "@/components/Catalog-details/dashboard-catalog";
 
 export default function CatalogDetail() {
   return (
