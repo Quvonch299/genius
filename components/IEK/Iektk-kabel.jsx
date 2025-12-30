@@ -3,9 +3,9 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-const METERS = [100, 200, 240, 320, 400]
-const PRICE_PER_METER = 65.7
 export default function IEkKabel() {
+  const PRICE_PER_METER = 65.7
+  const METERS = [100, 200, 240, 320, 400]
   const [activeMeter, setActiveMeter] = useState(100)
   const [count, setCount] = useState(4)
 
@@ -13,24 +13,23 @@ export default function IEkKabel() {
 
   return (
     <div className="max-w-7xl mt-[48px] mx-auto grid grid-cols-2 gap-12">
-      
+
       <div className="  items-center flex gap-4">
 
-     <div className='flex flex-col items-center gap-6'>
-  <IoIosArrowUp size={20} />
-  {[1, 2, 3, 4, 5].map((item, index) => (
-    <div
-      key={item}
-      onClick={() => setActiveMeter(index)} // active state uchun index ishlatamiz
-      className={`cursor-pointer rounded-md ${
-        activeMeter === index ? 'border border-[#27272766]' : ''
-      }`}
-    >
-      <Image src={'/sec.png'} width={64} height={64} alt='sec'/>
-    </div>
-  ))}
-  <IoIosArrowDown size={20} />
-</div>  
+        <div className='flex flex-col items-center gap-6'>
+          <IoIosArrowUp size={20} />
+          {[1, 2, 3, 4, 5].map((item, index) => (
+            <div
+              key={item}
+              onClick={() => setActiveMeter(index)} // active state uchun index ishlatamiz
+              className={`cursor-pointer rounded-md ${activeMeter === index ? 'border border-[#27272766]' : ''
+                }`}
+            >
+              <Image src={'/sec.png'} width={64} height={64} alt='sec' />
+            </div>
+          ))}
+          <IoIosArrowDown size={20} />
+        </div>
 
         <div className=" flex-1">
           <Image
@@ -61,9 +60,9 @@ export default function IEkKabel() {
                 onClick={() => setActiveMeter(m)}
                 className={`w-[94px] h-[44px] rounded-[8px] border 
                   ${activeMeter === m
-                  ? 'bg-[linear-gradient(119.47deg,#D8C19A_20.35%,#C3974C_94.16%)] border-none '
-                  : 'border-gray-300 text-gray-400'
-                }`}
+                    ? 'bg-[linear-gradient(119.47deg,#D8C19A_20.35%,#C3974C_94.16%)] border-none '
+                    : 'border-gray-300 text-gray-400'
+                  }`}
               >
                 {m}
               </button>
@@ -88,24 +87,22 @@ export default function IEkKabel() {
             </button>
           </div>
 
-          <div className="text-[22px] font-medium text-[#C3974C]">
-            {totalPrice.toLocaleString()} ₽
-          </div>
+          <div className="text-[22px] font-medium text-[#C3974C]"> {totalPrice.toLocaleString('ru-RU')} ₽ </div>
         </div>
 
         <button
           className="bg-[linear-gradient(119.47deg,#D8C19A_20.35%,#C3974C_94.16%)] w-[418px] h-[68px] rounded-[16px]  font-medium"
-        
+
         >
           В корзину
         </button>
 
         <div className="">
           <p className='flex justify-between font-normal mt-[24px] text-[18px] leading-[120%] tracking-[-1%]'> Характеристики </p>
-          <p className='flex justify-between font-normal mt-[16px] text-[14px] leading-[120%] tracking-[-1%] text-[#272727]'>Производитель <h2>ITK</h2></p>
-          <p className='flex justify-between font-normal mt-[12px] text-[14px] leading-[120%] tracking-[-1%] text-[#272727]'>Страна-производитель <h2>Китай</h2></p>
-          <p className='flex justify-between font-normal mt-[12px] text-[14px] leading-[120%] tracking-[-1%] text-[#272727]'>Количество жил<h2>4</h2></p>
-          <p className='flex justify-between font-normal mt-[12px] text-[14px] leading-[120%] tracking-[-1%] text-[#272727]'>Материал проводника<h2>Медь</h2></p>
+          <p className='flex justify-between font-normal mt-[16px] text-[14px] leading-[120%] tracking-[-1%] text-[#272727]'>Производитель <span>ITK</span></p>
+          <p className='flex justify-between font-normal mt-[12px] text-[14px] leading-[120%] tracking-[-1%] text-[#272727]'>Страна-производитель <span>Китай</span></p>
+          <p className='flex justify-between font-normal mt-[12px] text-[14px] leading-[120%] tracking-[-1%] text-[#272727]'>Количество жил<span>4</span></p>
+          <p className='flex justify-between font-normal mt-[12px] text-[14px] leading-[120%] tracking-[-1%] text-[#272727]'>Материал проводника<span>Медь</span></p>
         </div>
       </div>
     </div>

@@ -6,9 +6,9 @@ import React from 'react'
 export default function page() {
   return (
     <div>
-          <IEkKabel/>
-        <Texts/>
-        <ProductsBox text='Похожие товары' display={'hidden'}/>
+      <IEkKabel />
+      <Texts />
+      <ProductsBox text='Похожие товары' display={'hidden'} />
     </div>
   )
 }
