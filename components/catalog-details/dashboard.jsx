@@ -12,26 +12,26 @@ export default function Dashboard() {
         <Link href="/" className="hover:text-[#272727] ">
           Главная
         </Link>
--
+        -
         <Link href="/catalog" className="hover:text-[#272727] transition">
           Каталог
         </Link>
--
+        -
         <span className="text-[#272727]">Кабель и провод</span>
       </nav>
       <h1 className="font-normal mb-[48px] text-[48px] leading-[100%] tracking-[-0.04em]">
         Кабель и провод
       </h1>
-        <div className=' flex gap-6'>
-<div>
-    <LeftPanel/>
-</div>
-<div>
-    <RightPanel/>   
-</div>
+      <div className=' flex gap-6'>
+        <div>
+          <LeftPanel />
         </div>
-              <div className='mt-[100px] mb-[100px]'>
-        <ContactConsultation/>
+        <div>
+          <RightPanel />
+        </div>
+      </div>
+      <div className='mt-[100px] mb-[100px]'>
+        <ContactConsultation />
       </div>
     </div>
   )
