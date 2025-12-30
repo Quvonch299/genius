@@ -5,7 +5,7 @@ import ContactConsultation from '../home/ContactConsultation'
 import { ChevronRightIcon } from 'lucide-react'
 import Link from 'next/link'
 
-export default function Dashboard() {
+export default function DashboardCatalog() {
   return (
     <div className='max-w-7xl m-auto'>
       <nav className="flex mt-[50px]  items-center gap-2 text-sm text-[#27272799] mb-6">
