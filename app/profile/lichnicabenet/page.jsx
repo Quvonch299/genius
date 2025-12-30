@@ -1,9 +1,10 @@
+import KabenetBox from '@/components/profile/Lichniykabenet/kabenetBox'
 import React from 'react'
 
 export default function page() {
   return (
-    <div className='max-w-[858px] m-auto'>
-
+    <div>
+<KabenetBox/>
     </div>
   )
 }

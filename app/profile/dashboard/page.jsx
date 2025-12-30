@@ -7,7 +7,7 @@ export default function Dashboard() {
     const [step, setStep] = useState(0)
 
     return (
-        <div className='flex gap-[30px] w-full'>
+        <div className='flex gap-[30px] max-w-7xl m-auto'>
             <div className="flex-shrink-0">
                 <LeftPanel step={step} setStep={setStep} />
             </div>

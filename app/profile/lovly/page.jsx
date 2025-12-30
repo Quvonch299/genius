@@ -1,7 +1,10 @@
+import LovlyBox from '@/components/profile/Lovly/ShopBox'
 import React from 'react'
 
 export default function Lovly() {
   return (
-    <div>page3</div>
+    <div>
+      <LovlyBox/>
+    </div>
   )
 }

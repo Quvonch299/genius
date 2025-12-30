@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import {  useState } from "react";
 import { MagnifyingGlassIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +9,6 @@ import { AnimatePresence,motion } from "framer-motion";
 export default function Navbar() {
   const [search, setSearch] = useState("");
   const [catalogOpen, setCatalogOpen] = useState(false); // dropdown holati
-
   return (
     <div className="max-w-7xl mx-auto">
       <div className="mt-[43px] hidden lg:block">
@@ -48,6 +47,7 @@ export default function Navbar() {
           >
             <div className="py-4 px-2">
               <Link
+              onClick={() => setCatalogOpen(false)}
                 href="/catalog-details"
                 className="block py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors duration-200"
               >
@@ -95,7 +95,7 @@ export default function Navbar() {
                 <MagnifyingGlassIcon className="w-5 h-5 text-white" />
               </div>
             </div>
-            <div className="w-[47px] h-[47px] bg-gradient-to-br from-[#D8C19A] to-[#C3974C] rounded-[12px] flex items-center justify-center cursor-pointer">
+            <div  className="w-[47px] h-[47px] bg-gradient-to-br from-[#D8C19A] to-[#C3974C] rounded-[12px] flex items-center justify-center cursor-pointer">
               <Image src="/icon/navbaricon1.svg" width={18} height={18} alt="Favorites" />
             </div>
             <div className="w-[47px] h-[47px] bg-gradient-to-br from-[#D8C19A] to-[#C3974C] rounded-[12px] flex items-center justify-center cursor-pointer">
